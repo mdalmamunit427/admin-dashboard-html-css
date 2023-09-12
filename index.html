@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard using HTML CSS JS</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- EXTERNAL CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="css/unicons.css"> -->
+
+
+</head>
+<body>
+  <!-- aside section -->
+      <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
+          <i class="bx bx-chevron-left close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
+          <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
+              <img src="img/mamun.jpg" alt="" class="rounded-pill img-fluid">
+              <div class="ms-2">
+                <h5 class="fs-6 mb-0">
+                  <a class="text-decoration-none" href="#">Mamun Dev</a>
+                </h5>
+                <p class="mt-1 mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+          </div>
+        
+          <div class="search position-relative text-center px-4 py-3 mt-2">
+              <input type="text" class="form-control w-100 border-0 bg-transparent" placeholder="Search here">
+              <i class="bx bx-search position-absolute d-block fs-6"></i>
+          </div>
+        
+          <ul class="categories list-unstyled">
+            <li class="has-dropdown">
+              <i class='bx bx-home' ></i><a href="#"> Dashboard</a>
+              <ul class="sidebar-dropdown list-unstyled">
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">ipsum dolor</a></li>
+                <li><a href="#">dolor ipsum</a></li>
+                <li><a href="#">amet consectetur</a></li>
+                <li><a href="#">ipsum dolor sit</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <i class='bx bx-folder'></i><a href="#"> File manager</a>
+            </li>
+            <li class="has-dropdown">
+              <i class='bx bxs-calendar' ></i><a href="#"> Calender</a>
+              <ul class="sidebar-dropdown list-unstyled">
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">ipsum dolor</a></li>
+                <li><a href="#">dolor ipsum</a></li>
+                <li><a href="#">amet consectetur</a></li>
+                <li><a href="#">ipsum dolor sit</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <i class='bx bx-envelope' ></i><a href="#"> Mailbox</a>
+              <ul class="sidebar-dropdown list-unstyled">
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">ipsum dolor</a></li>
+                <li><a href="#">dolor ipsum</a></li>
+                <li><a href="#">amet consectetur</a></li>
+                <li><a href="#">ipsum dolor sit</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <i class='bx bx-cart-alt' ></i><a href="#"> Ecommerce</a>
+              <ul class="sidebar-dropdown list-unstyled">
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">ipsum dolor</a></li>
+                <li><a href="#">dolor ipsum</a></li>
+                <li><a href="#">amet consectetur</a></li>
+                <li><a href="#">ipsum dolor sit</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <i class='bx bx-briefcase' ></i><a href="#"> Projects</a>
+              <ul class="sidebar-dropdown list-unstyled">
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">ipsum dolor</a></li>
+                <li><a href="#">dolor ipsum</a></li>
+                <li><a href="#">amet consectetur</a></li>
+                <li><a href="#">ipsum dolor sit</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <i class='bx bx-cog' ></i><a href="#"> Settings</a>
+              <ul class="sidebar-dropdown list-unstyled">
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">ipsum dolor</a></li>
+                <li><a href="#">dolor ipsum</a></li>
+                <li><a href="#">amet consectetur</a></li>
+                <li><a href="#">ipsum dolor sit</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <i class='bx bx-pie-chart-alt' ></i><a href="#"> Components</a>
+              <ul class="sidebar-dropdown list-unstyled">
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">ipsum dolor</a></li>
+                <li><a href="#">dolor ipsum</a></li>
+                <li><a href="#">amet consectetur</a></li>
+                <li><a href="#">ipsum dolor sit</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <i class='bx bx-pie-chart-alt' ></i><a href="#"> Charts</a>
+              <ul class="sidebar-dropdown list-unstyled">
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">ipsum dolor</a></li>
+                <li><a href="#">dolor ipsum</a></li>
+                <li><a href="#">amet consectetur</a></li>
+                <li><a href="#">ipsum dolor sit</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <i class='bx bx-map' ></i></i><a href="#"> Maps</a>
+            </li>
+          </ul>
+      </aside>
+      
+      
+      <!-- main body content -->
+      <section id="wrapper">
+        <!-- top navbar -->
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid mx-2">
+            <!-- nav header -->
+            <div class="navbar-header">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-navbar" aria-controls="toggle-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class='bx bx-menu-alt-left text-white' ></i>
+              </button>
+              <a class="navbar-brand" href="#">Hello,<span class="main-color"> Mamun</span></a>
+            </div>
+            <!-- right side of header -->
+            <div class="collapse navbar-collapse" id="toggle-navbar">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Settings
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">My account</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">My inbox</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Help</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class='bx bx-conversation' ></i><span>23</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class='bx bx-bell' ></i><span>98</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i data-show="show-side-navigation1" class="bx bx-menu show-side-btn"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      
+        <!-- welcome section -->
+        <div class="p-4">
+          <div class="welcome">
+            <div class="content rounded-3 p-3">
+              <h1 class="fs-3">Welcome to Dashboard</h1>
+              <p class="mb-0">Hello Mamun, welcome to your awesome dashboard!</p>
+            </div>
+          </div>
+      
+          <!-- statistics section -->
+          <section class="statistics mt-4">
+            <div class="row">
+
+              <!-- emails registered -->
+              <div class="col-lg-4">
+                <div class="box d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3">
+                  <i class="bx bx-message-detail fs-2 text-center bg-primary rounded-circle"></i>
+                  <div class="ms-3">
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0">1,245</h3> <span class="d-block ms-2">Emails</span>
+                    </div>
+                    <p class="fs-normal mb-0">Lorem ipsum dolor sit amet</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- project -->
+              <div class="col-lg-4">
+                <div class="box d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3">
+                  <i class="bx bx-file-blank fs-2 text-center bg-danger rounded-circle"></i>
+                  <div class="ms-3">
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0">34</h3> <span class="d-block ms-2">Projects</span>
+                    </div>
+                    <p class="fs-normal mb-0">Lorem ipsum dolor sit amet</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- users -->
+              <div class="col-lg-4">
+                <div class="box d-flex rounded-2 align-items-center p-3">
+                  <i class='bx bx-user fs-2 text-center bg-success rounded-circle'></i>
+                  <div class="ms-3">
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0">5,445</h3> <span class="d-block ms-2">Users</span>
+                    </div>
+                    <p class="fs-normal mb-0">Lorem ipsum dolor sit amet</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+
+          <!-- charts -->
+          <section class="charts mt-4">
+            <div class="row">
+              <!-- leftside chart for this month -->
+              <div class="col-lg-6">
+                <div class="chart-container rounded-2 p-3">
+                  <h3 class="fs-6 mb-3">Activity of this Month</h3>
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+
+              <!-- right side: Yearly Actvities -->
+              <div class="col-lg-6">
+                <div class="chart-container rounded-2 p-3">
+                  <h3 class="fs-6 mb-3">Yearly Analitics</h3>
+                  <canvas id="myChart2"></canvas>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <!-- admin sections -->
+          <section class="admins mt-4">
+            <div class="row">
+              <!-- first row -->
+              <div class="col-md-6">
+                <div class="box">
+                  <!--  admin 1-->
+                  <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
+                    <div class="img">
+                      <img class="img-fluid rounded-pill"
+                           width="75" height="75"
+                           src="img/mamun-coat.png">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="fs-5 mb-1">Md Mamun</h3>
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit.</p>
+                    </div>
+                  </div>
+
+                  <!-- admin 2 -->
+                  <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
+                    <div class="img">
+                      <img class="img-fluid rounded-pill"
+                           width="75" height="75"
+                           src="img/mamun-coat.png"
+                           alt="admin">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="fs-5 mb-1">Md Mamun</h3>
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit.</p>
+                    </div>
+                  </div>
+
+                  <!-- admin 3 -->
+                  <div class="admin d-flex align-items-center rounded-2 p-3">
+                    <div class="img">
+                      <img class="img-fluid rounded-pill"
+                           width="75" height="75"
+                           src="img/mamun-coat.png"
+                           alt="admin">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="fs-5 mb-1">Md Mamun</h3>
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- second row -->
+              <div class="col-md-6">
+                <div class="box">
+                  <!-- admin 4 -->
+                  <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
+                    <div class="img">
+                      <img class="img-fluid rounded-pill"
+                           width="75" height="75"
+                           src="img/mamun-coat.png"
+                           alt="admin">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="fs-5 mb-1">Md Mamun</h3>
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit.</p>
+                    </div>
+                  </div>
+
+                  <!-- admin 5 -->
+                  <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
+                    <div class="img">
+                      <img class="img-fluid rounded-pill"
+                           width="75" height="75"
+                           src="img/mamun-coat.png"
+                           alt="admin">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="fs-5 mb-1">Md Mamun</h3>
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit.</p>
+                    </div>
+                  </div>
+
+                  <!-- admin 6 -->
+                  <div class="admin d-flex align-items-center rounded-2 p-3">
+                    <div class="img">
+                      <img class="img-fluid rounded-pill"
+                           width="75" height="75"
+                           src="img/mamun-coat.png"
+                           alt="admin">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="fs-5 mb-1">Md Mamun</h3>
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+
+          <!-- 2nd statis -->
+          <section class="statis mt-4 text-center">
+            <div class="row">
+              <!-- page views -->
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="box bg-primary p-3">
+                    <i class='bx bxs-show'></i>
+                  <h3>5,154</h3>
+                  <p class="lead">Page views</p>
+                </div>
+              </div>
+
+              <!-- registered users -->
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="box bg-danger p-3">
+                    <i class='bx bxs-user' ></i>
+                  <h3>245</h3>
+                  <p class="lead">User registered</p>
+                </div>
+              </div>
+
+              <!-- sales -->
+              <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                <div class="box bg-warning p-3">
+                    <i class='bx bxs-shopping-bag' ></i>
+                  <h3>5,154</h3>
+                  <p class="lead">Product sales</p>
+                </div>
+              </div>
+
+              <!-- transactions -->
+              <div class="col-md-6 col-lg-3">
+                <div class="box bg-success p-3">
+                  <i class='bx bxs-bolt-circle'></i>
+                  <h3>5,154</h3>
+                  <p class="lead">Transactions</p>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+
+          <!-- chart 3: bottom -->
+          <section class="charts mt-4">
+            <div class="chart-container p-3">
+              <h3 class="fs-6 mb-3">Product Sales Analysis</h3>
+              <div class="chart3" style="height: 300px">
+                <canvas id="chart3"></canvas>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+
+
+      <!-- script tags -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <script src="js/app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="js/Chart.bundle.js"></script>
+</body>
+</html>
